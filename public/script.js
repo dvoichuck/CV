@@ -18,7 +18,7 @@ let img_src = {
 }
 let imgOff = -1
 function call(key) {
-    if (imgOff !== -1)
+    if (imgOff !== -1 )
         document.getElementById(`${img_src[imgOff][0]}`).src = img_src[imgOff][1]
     document.getElementById('setting').innerHTML = ''
     document.getElementById('setting').insertAdjacentHTML('afterbegin', img_src[key][0])
